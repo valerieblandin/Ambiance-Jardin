@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Devis</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light pl-5" id="bgNavbar">
+            <a href="#"><img src="assets/img/logo.png" alt="Logo Ambiance jardin"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto pl-5 aligNav textNav">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                    <a class="nav-link" href="amenagement.html">Nos services</a>
+                    <a class="nav-link" href="experts.html">Nos experts</a>
+                    <a class="nav-link" href="boutique.html">Boutique</a>
+                    <a href="devis.html"><button type="button" class="btn btn-sm bgBtnOrang" href="devis.html">Devis</button></a>
+                    <a class="nav-link" href="#">Nous trouver</a>
+                </div>
+            </div>
+        </nav>
+    
+        <!--TITRE-->
+        <div class="row">
+            <div class="col colDevis">
+                <h1 class="text-center">Devis</h1>
+                <p class="text-center fs-1">Vous souhaitez nous contacter pour une demande de devis, <br> merci de remplir les formulaires ci-dessous pour nous permettre d'avoir plus d'informations.</p>
+            </div>
+        </div>
+            
+        <div class="row">
+
+            <!--QUESTIONNAIRE-->
+            <div class="col">     
+                <form>
+
+                    <!--Ma demande-->
+                    <div class="row mx-lg-5 mx-1 mt-5">
+                        <div class="col-12">
+                            <h2 class="textTitres">Ma demande</h2>
+                        </div>
+                            <div class="col-lg-12 col-1 mt-4">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Aménagement</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Entretien</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Élagage</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Décoration</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Autre</label>
+                                </div>
+                            </div>
+                    </div>
+
+                    <!--Autre précision-->
+                    <div class="row ml-lg-5 ml-1">
+                        <div class="col-md-6">
+                            <div class="FormControlInput">
+                                <label for="exampleFormControlInput1" class="form-label"></label>
+                                <input type="Precisez" class="form-control" id="exampleFormControlInput1" placeholder="Si Autre, précisez">
+                            </div>
+                        </div>
+                    </div> 
+
+                    <!--Mon espace-->
+                    <div class="row ml-lg-5 ml-1 mt-5">
+                        <div class="col-md-4">  
+                            <h2 class="textTitres">Mon espace</h2> 
+                                <div class="form-group mt-4">
+                                    <label for="exampleFormControlSelect1">Surface</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Choisir</option>
+                                        <option>de 10 à 100m²</option>
+                                        <option>de 100 à 500m²</option>
+                                        <option>de 500 à 1000m²</option>
+                                        <option>plus de 1000m²</option>
+                                    </select>
+                                </div>
+                        </div>
+                    </div> 
+
+                    <!--Informations complémentaires-->
+                    <div class="row ml-lg-5 ml-1 mt-5">
+                        <div class="col-12">
+                            <h2 class="textTitres">Informations complémentaires</h2>   
+                            <div class="form-group mt-4">
+                                <label for="exampleFormControlFile1">Envoyer des photos, des plans...</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row ml-lg-5 ml-1 mt-4">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Vous souhaitez nous en dire plus ?</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">Compléments</textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Formulaire-->
+                    <div class="row ml-lg-5 ml-1">
+                        <div class="col-12 col-lg-6">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="Nom" class="form-control" id="exampleFormControlInput1" placeholder="Nom de famille">
+                                
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="telephone" class="form-control" id="exampleFormControlInput1" placeholder="Téléphone">
+                        </div>
+                        
+                        <div class="col-12 col-lg-6">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="Prénom" class="form-control" id="exampleFormControlInput1" placeholder="Prénom">
+                            
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@exemple.com">
+                        </div>
+                    </div>
+
+                    <!--Checkbox-->
+                    <div class="row ml-lg-5 ml-1 mt-5">
+                        <div class="col">
+                            <div class="custom-control custom-checkbox">
+                                <div class="d-flex justify-content-center">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">J'ai lu et j'accepte les règles de confidentialité de ce site</label>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+
+                    <!--Bouton de validation-->
+                    <div class="row ml-lg-5 ml-1 mt-5">
+                        <div class="col ">
+                            <div class="d-flex justify-content-center ">
+                                <button class="boutonDevis btn btn-sm" type="submit">Envoyer</button>
+                            </div>
+                        </div>                
+                    </div>
+                </form>
+            </div>
+
+            <!--IMAGE-->
+            <div class="col d-none d-md-none d-lg-block mt-5">
+                <img src="assets/img/garden.jpg" alt="" class="col-12">
+            </div>  
+        </div>
+
+
+        <!--FOOTER PAGES-->
+        <footer class="text-center text-lg-start mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <!--row interne-->
+                    <div class="row colorTxtFoot">
+                        <div class="col-md-12 col-12">
+                            <img class="redLogFoot mb-2" src="assets/img/mono.png" alt="Logo Ambiance Jardin">
+                            <p>1601 Route de la vallée <br>
+                            27210 FATOUVILLE GRESTAIN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <!--row interne-->
+                    <div class="row d-flex flex-column justify-content-center mt-md-4">
+                        <div class="col-md-6 col-12 mb-2">
+                            <a class="text text-decoration-none colorTxtFoot aligMlResponsiveFoot" href="mentions.html">Mentions légales</a>
+                        </div>
+                        <div class="col-md-6 col-12 mb-2">
+                            <a href="https://www.facebook.com/profile.php?id=100011957836789" target="_blank">
+                                <img class="redImgFoot aligLogResponsiveFoot" src="assets/img/fb.png"alt="Icone Facebbok">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bgCopyR text-center p-3">© 2021 Copyright:
+                <a class="text-dark text-decoration-none" href="index.html">AmbianceJardin</a>
+            </div>
+        </footer>
+
+
+    <!--Fin container-->
+    </div>   
+</body>

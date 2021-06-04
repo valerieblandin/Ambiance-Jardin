@@ -1,0 +1,228 @@
+*{
+    font-family: 'Arvo', serif;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height:100vh;
+    background: linear-gradient( #F0EAD2, #b3e38c);
+}
+        /*Navbar*/
+#bgNavbar{
+    background-color: #538d22;
+}
+.bgBtnOrang{
+    background-color: #cc5803;
+    border: solid  #cc5803;
+    color: #F0EAD2;
+    font-size: 22px;
+    width: 75px;
+}
+.bgBtnOrang :hover{
+    background-color: #F0EAD2;
+    border: solid #F0EAD2;
+    color : #504416;
+}
+.textNav{ 
+    font-size: 22px; 
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #F0EAD2; 
+}
+.navbar-light .navbar-nav .nav-link :hover{
+    color: #504416
+}
+
+@media screen and (min-width:1128px){
+    .aligNav{
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+    }
+}
+        /*Header*/
+#bgHeader{
+    background-image: url(../img/headerAccueil.jpg);
+    background-size: auto;
+    height: 400px;
+    margin-top: 100px;
+}
+@media screen and (max-width: 480px){
+   #bgHeader{
+        height: 250px;
+   } 
+}
+@media screen and (max-width: 762px){
+    #bgHeader{
+         height: 300px;
+    } 
+ }
+@media screen and (max-width: 762px){
+    .assResponsive{
+        display: none;
+    }
+}
+@media screen and (min-width: 762px){
+    .dispResponsive{
+        display:none
+    }
+}
+
+        /*Cards*/
+.container{
+    align-items: center;
+}
+.card{
+    background-color: rgba(147, 185, 106, 0.7);
+    border-radius: 2%;
+    color: rgb(56, 38, 9);
+}
+.btnCard{
+    color: #F0EAD2;
+    background-color: rgb(97, 150, 50);
+    border-color: rgb(97, 150, 50);
+}
+.cardPres{
+    font-size: larger;
+}
+.card-titlePres{
+    font-size: xx-large;
+    color: #F0EAD2;
+}
+p{
+    font-family: 'Lato', sans-serif;
+}
+
+        /*Formulaire*/
+.formulaire {
+    background-color: #538d22;
+    padding: 1em;
+    border-radius: 1em;
+}
+.bouton {
+    width: 100%;
+    background: #cc5803;
+    border: solid  #cc5803;
+    color: #F0EAD2;
+    font-size: 1.3em;
+    border-radius: 0.3em;
+}
+.bouton:hover{
+    color : #504416;
+}
+@media screen and (max-width: 680px){
+    .rgp {
+        font-size: 0.8em;
+    } 
+}
+        /*Footer Accueil*/
+.footer-font{
+    font-size: 1.3em;
+    font-weight: solid black ;
+}
+
+            /*PAGE NOS SERVICES*/ 
+.aligCardServ{
+    background-color: #F0EAD2;
+    margin-top: 90px;
+    width: 100%;
+}
+.bgBadgAmen{
+    background-color: #528d229f;
+    font-size: 22px;
+    color: #F0EAD2;
+}
+.txtAmen{
+    color: #504416;
+}
+@media screen and (min-width:768px) {
+    .txtAmen{
+        margin-top: 28px;
+    }
+}
+           /*GALLERY PHOTOS*/
+.aligGallery {
+    margin: 15px;
+}
+@media screen and (max-width:769px){
+    .imgSupResponsive{
+        display: none;
+    }
+    .espResponsive >a >img{
+        padding: 10px; 
+    }
+}
+            /*FOOTER PAGES*/
+.colorTxtFoot{
+    color: #504416;
+    font-size: 17px;
+}
+.colorTxtFoot:hover{
+    color: #504416;
+}
+.redLogFoot{
+    height: 65px;
+}
+.redImgFoot{
+    height: 45px;
+}
+.bgCopyR{
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+/* A Ajouter QUESTIONNAIRES*/
+.colDevis{
+    margin-top: 100px; 
+}
+.textTitres{
+    font-size: x-large;
+    font-weight: bold;
+}
+.form-check-input:before{
+    background-color:red;
+  }
+.form-check-input:checked~.form-check-input::before{
+    background-color:black;
+  }
+.boutonDevis{
+    width: 150px;
+    background: #cc5803;
+    border: solid  #cc5803;
+    color: #F0EAD2;
+    font-size: 1.3em;
+    border-radius: 0.3em;
+}
+
+        /*PAGE BOUTIQUE*/
+#shop{
+    margin-top: 100px;
+}
+.pagination {
+    border: solid #538d22;     
+}
+.page-item.active .page-link {
+    background: #538d22;
+    border-color:  solid  #538d22;
+}        
+.page-item:first-child .page-link{
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}       
+@media screen and (max-width: 680px){
+    .rgp {
+        font-size: 0.8em;
+    } 
+    .typoshop{
+        font-size: 0.8em;
+    }
+    .titleshop{
+        font-size: x-large;
+    }
+}
+
+        /*PAGE NOS EXPERTS*/
+.alignExperts {
+    margin-top: 100px; 
+}
